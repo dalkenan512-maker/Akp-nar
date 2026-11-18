@@ -1,206 +1,136 @@
 
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#174b32">
-<title>Akpınar Köyü | Merzifon - Amasya</title>
-<meta name="description" content="Amasya Merzifon Akpınar Köyü tanıtım, videolar, fotoğraflar ve hatıralar.">
+<title>Akpınar Köyü | Merzifon Amasya</title>
+<meta name="description" content="Akpınar Köyü tanıtım, videolar, fotoğraflar, harita ve hatıralar.">
 <style>
-:root{--green:#174b32;--green2:#36764d;--light:#eef5ed;--gold:#e8c77a;--ink:#26352b}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#f4f7f2;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
-a{color:var(--green2)}
-header{min-height:390px;padding:80px 20px 65px;text-align:center;color:white;background:linear-gradient(135deg,#123c29dd,#39794ddd),url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85") center/cover}
-header h1{font-size:clamp(38px,7vw,68px);letter-spacing:3px;margin:0 0 8px;text-shadow:0 2px 12px #0005}
-header p{font-size:19px;margin:5px}
-header .sub{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#f4e6bd}
-nav{position:sticky;top:0;z-index:20;background:#123c29;padding:10px;text-align:center;box-shadow:0 3px 12px #0002}
-nav a{display:inline-block;color:white;text-decoration:none;padding:8px 12px;font-weight:bold;font-size:14px}
-nav a:hover{color:var(--gold)}
-main{max-width:1120px;margin:auto;padding:18px}
-section{background:white;margin:22px 0;padding:clamp(20px,4vw,38px);border-radius:16px;box-shadow:0 4px 20px #183a2410}
-h2{color:var(--green);font-size:27px;margin:0 0 18px;border-bottom:2px solid #e4eee3;padding-bottom:12px}
-h3{color:var(--green)}
-.hero-card{padding:30px;text-align:center;border-radius:14px;background:linear-gradient(130deg,#e4f0df,#f9f4e6)}
-.hero-card h2{border:0;font-size:30px}
-.pills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
-.pill{background:#fff;padding:8px 14px;border-radius:30px;color:var(--green);font-weight:bold;font-size:13px}
-.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.info-card{padding:20px;border:1px solid #e4ece2;border-radius:12px;background:#fbfdfb}
-.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.video{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#111}
-.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px}
-.memorial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.person{padding:18px;text-align:center;background:#f8faf7;border:1px solid #e0e9df;border-radius:13px}
-.avatar{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;background:#dcebdd;color:var(--green);font-size:27px;font-weight:bold}
-.person h3{font-size:18px;margin:7px 0}
-.person p{margin:4px 0;color:#68756a;font-size:14px}
-.map{width:100%;height:360px;border:0;border-radius:12px}
-.notice{padding:14px 16px;border-left:4px solid #d3b15d;background:#fff9e9;border-radius:7px;font-size:14px}
-.small{font-size:13px;color:#68756a}
-footer{text-align:center;padding:35px 18px;background:#123c29;color:white;margin-top:35px}
-footer p{margin:5px}
-button{border:0;background:var(--green2);color:white;padding:10px 15px;border-radius:8px;cursor:pointer}
-button:hover{background:var(--green)}
-#lastUpdate{font-size:12px;color:#68756a}
-@media(max-width:700px){
- .two-col,.video-grid{grid-template-columns:1fr}
- .gallery{grid-template-columns:1fr 1fr}
- nav a{padding:7px;font-size:12px}
- header{min-height:310px;padding:65px 15px}
- .map{height:290px}
-}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f7f1;color:#26372a}
+header{background:linear-gradient(130deg,#123d29dd,#36794bdd),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1600') center/cover;color:white;text-align:center;padding:85px 15px}
+header h1{font-size:clamp(38px,7vw,65px);margin:0;letter-spacing:3px}
+header p{font-size:18px}
+nav{position:sticky;top:0;background:#123d29;text-align:center;padding:12px;z-index:5}
+nav a{color:white;text-decoration:none;padding:9px 11px;display:inline-block;font-size:14px;font-weight:bold}
+nav a:hover{color:#f0d58f}
+main{max-width:1100px;margin:auto;padding:15px}
+section{background:white;margin:22px 0;padding:28px;border-radius:15px;box-shadow:0 3px 15px #0000000c}
+h2{color:#23603a;border-bottom:2px solid #e1ebdf;padding-bottom:10px}
+.hero{background:#e5f0e1;padding:35px;text-align:center;border-radius:12px}
+.hero h2{border:0;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:#f7faf6;border:1px solid #e0e9df;border-radius:12px;padding:18px;text-align:center}
+.card h3{color:#285e3b}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+iframe.video{width:100%;aspect-ratio:16/9;border:0;border-radius:12px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:10px}
+.map{width:100%;height:350px;border:0;border-radius:12px}
+.avatar{width:75px;height:75px;border-radius:50%;display:grid;place-items:center;background:#dcebdc;color:#225a37;font-size:27px;font-weight:bold;margin:auto}
+.person{background:#f7faf6;border:1px solid #e0e9df;border-radius:12px;padding:17px;text-align:center}
+.person h3{margin:8px 0}
+.person p{font-size:14px;color:#647267}
+.person a{color:#24603a}
+.note{background:#fff8e9;border-left:4px solid #d4ad56;padding:14px;border-radius:8px;font-size:14px}
+footer{background:#123d29;color:white;text-align:center;padding:30px}
+button{background:#23603a;color:white;border:0;border-radius:8px;padding:10px 14px;cursor:pointer}
+@media(max-width:650px){.video-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}section{padding:20px}nav a{font-size:12px;padding:7px}}
 </style>
 </head>
 <body>
 
 <header>
- <div class="sub">Amasya • Merzifon</div>
- <h1>AKPINAR KÖYÜ</h1>
- <p>Köyümüzün tanıtım ve hatıra sayfası</p>
- <p>Geçmişimizi yaşatıyor, geleceğe taşıyoruz.</p>
+<p>AMASYA • MERZİFON</p>
+<h1>AKPINAR KÖYÜ</h1>
+<p>Köyümüzün tanıtım ve hatıra sitesi</p>
+<p>Geçmişimizi yaşatıyor, geleceğe taşıyoruz.</p>
 </header>
 
 <nav>
- <a href="#anasayfa">Ana Sayfa</a>
- <a href="#hakkimizda">Köyümüz</a>
- <a href="#videolar">Videolar</a>
- <a href="#galeri">Fotoğraflar</a>
- <a href="#vefat">Vefat Edenlerimiz</a>
- <a href="#harita">Konum</a>
+<a href="#anasayfa">Ana Sayfa</a>
+<a href="#hakkimizda">Köyümüz</a>
+<a href="#videolar">Videolar</a>
+<a href="#galeri">Fotoğraflar</a>
+<a href="#vefat">Vefat Edenler</a>
+<a href="#harita">Harita</a>
 </nav>
 
 <main>
 <section id="anasayfa">
- <div class="hero-card">
-  <h2>Akpınar Köyü'ne Hoş Geldiniz</h2>
-  <p>Amasya'nın Merzifon ilçesine bağlı Akpınar Köyü'nü tanıtmak, köyümüze ait görüntüleri paylaşmak ve güzel hatıralarımızı bir arada yaşatmak için buradayız.</p>
-  <div class="pills">
-   <span class="pill">Birlik ve beraberlik</span>
-   <span class="pill">Köy kültürü</span>
-   <span class="pill">Güzel hatıralar</span>
-  </div>
- </div>
+<div class="hero">
+<h2>Akpınar Köyü'ne Hoş Geldiniz</h2>
+<p>Amasya Merzifon Akpınar Köyü'nün güzelliklerini, kültürünü ve hatıralarını bir arada yaşatıyoruz.</p>
+</div>
 </section>
 
 <section id="hakkimizda">
- <h2>Köyümüz Hakkında</h2>
- <p><strong>Akpınar Köyü</strong>, Amasya ilinin Merzifon ilçesine bağlıdır. Bu sayfa köyümüzü tanıtmak, köyden haberleri ve videoları paylaşmak, köylülerimizin ortak hatıralarını gelecek nesillere aktarmak amacıyla hazırlanmıştır.</p>
- <div class="two-col">
-  <div class="info-card">
-   <h3>📍 Konumumuz</h3>
-   <p>Amasya / Merzifon / Akpınar Köyü</p>
-  </div>
-  <div class="info-card">
-   <h3>🤝 Amacımız</h3>
-   <p>Köyümüzün kültürünü, anılarını ve dayanışmasını dijital ortamda yaşatmak.</p>
-  </div>
- </div>
- <p class="small">Tarihçe, nüfus ve köyümüze ait diğer bilgiler doğrulanmış bilgiler geldikçe bu bölüme eklenecektir.</p>
+<h2>Köyümüz Hakkında</h2>
+<p>Akpınar Köyü, Amasya ilinin Merzifon ilçesine bağlıdır. Bu site köyümüzü tanıtmak, köyümüze ait videoları paylaşmak ve geçmişimizi gelecek nesillere aktarmak amacıyla hazırlanmıştır.</p>
+<div class="grid">
+<div class="card"><h3>📍 Konum</h3><p>Amasya / Merzifon / Akpınar</p></div>
+<div class="card"><h3>🤝 Birlik</h3><p>Köyümüzün dayanışmasını ve kültürünü yaşatıyoruz.</p></div>
+<div class="card"><h3>❤️ Hatıralar</h3><p>Güzel anılarımızı ve büyüklerimizi unutmuyoruz.</p></div>
+</div>
 </section>
 
 <section id="videolar">
- <h2>Köyümüzden Videolar</h2>
- <div class="video-grid">
-  <div>
-   <h3>Akpınar Köyü Videosu 1</h3>
-   <iframe class="video" src="https://www.youtube-nocookie.com/embed/IDiZPAj4HiU" title="Akpınar Köyü videosu 1" loading="lazy" allowfullscreen></iframe>
-  </div>
-  <div>
-   <h3>Akpınar Köyü Videosu 2</h3>
-   <iframe class="video" src="https://www.youtube-nocookie.com/embed/T7COPE97wv4" title="Akpınar Köyü videosu 2" loading="lazy" allowfullscreen></iframe>
-  </div>
- </div>
+<h2>Köyümüzden Videolar</h2>
+<div class="video-grid">
+<div><h3>Akpınar Köyü Video 1</h3>
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/IDiZPAj4HiU" title="Köy videosu 1" allowfullscreen loading="lazy"></iframe></div>
+<div><h3>Akpınar Köyü Video 2</h3>
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/T7COPE97wv4" title="Köy videosu 2" allowfullscreen loading="lazy"></iframe></div>
+</div>
 </section>
 
 <section id="galeri">
- <h2>Köyümüzden Fotoğraflar</h2>
- <p>Köyümüze ait fotoğrafları buraya ekleyebiliriz. Şimdilik aşağıdaki görseller örnek doğa görselleridir; Akpınar Köyü'ne ait oldukları anlamına gelmez.</p>
- <div class="gallery">
-  <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80" alt="Örnek doğa manzarası">
-  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Örnek kır manzarası">
-  <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=700&q=80" alt="Örnek gün doğumu">
- </div>
- <p class="small">Köy fotoğraflarını eklemek için GitHub deposuna fotoğrafları yükleyip buradaki örnek görsel adreslerini değiştirebilirsin.</p>
+<h2>Fotoğraf Galerisi</h2>
+<p>Aşağıdaki görseller örnek doğa fotoğraflarıdır; köyümüze ait gerçek fotoğraflar değildir.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700" alt="Örnek doğa manzarası">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700" alt="Örnek kır manzarası">
+<img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=700" alt="Örnek gün doğumu">
+</div>
 </section>
 
 <section id="vefat">
- <h2>Vefat Edenlerimiz</h2>
- <p>Aramızdan ayrılanları rahmet, saygı ve özlemle anıyoruz. Mekânları cennet olsun.</p>
- <div id="memorialList" class="memorial-grid">
-  <p>Vefat kayıtları yükleniyor...</p>
- </div>
- <p class="notice">Bu bölümde yalnızca ailelerin veya yetkili kaynakların kamuya açık olarak paylaştığı bilgiler kullanılmalıdır. Fotoğrafı bulunmayan kişilere ait fotoğraf uydurulmaz. Otomatik botun bulduğu yeni ilanlar, kontrol edilip onaylanana kadar burada gösterilmez.</p>
- <p id="lastUpdate"></p>
+<h2>Vefat Edenlerimiz</h2>
+<p>Aramızdan ayrılanları rahmet, saygı ve özlemle anıyoruz. Mekânları cennet olsun.</p>
+<div class="grid" id="vefatListesi">
+<div class="person"><div class="avatar">M</div><h3>Mirza Karabulut</h3><p>24 Kasım 2023</p></div>
+<div class="person"><div class="avatar">H</div><h3>Hacı Emine Yıldız</h3><p>2 Mart 2025</p></div>
+<div class="person"><div class="avatar">M</div><h3>Mustafa Duran</h3><p>2 Mart 2025</p></div>
+<div class="person"><div class="avatar">S</div><h3>Senem Parlak</h3><p>22 Nisan 2025</p></div>
+<div class="person"><div class="avatar">H</div><h3>Halil Şahinkaya</h3><p>23 Ağustos 2026</p></div>
+</div>
+<p class="note">Bu liste internette karşılaşılan ilanlardan derlenmiş başlangıç listesidir; eksiksiz köy listesi olduğu doğrulanmamıştır. Fotoğraflar aile izniyle eklenmelidir.</p>
 </section>
 
 <section id="harita">
- <h2>Akpınar Köyü'nün Konumu</h2>
- <p>Amasya / Merzifon / Akpınar Köyü</p>
- <iframe class="map" title="Akpınar Köyü haritası" loading="lazy"
- src="https://maps.google.com/maps?q=Akp%C4%B1nar%20K%C3%B6y%C3%BC%20Merzifon%20Amasya&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe>
+<h2>Akpınar Köyü Haritası</h2>
+<p>Amasya / Merzifon / Akpınar Köyü</p>
+<iframe class="map" loading="lazy" title="Akpınar Köyü haritası" src="https://maps.google.com/maps?q=Akp%C4%B1nar%20K%C3%B6y%C3%BC%20Merzifon%20Amasya&z=12&output=embed"></iframe>
+</section>
+
+<section id="otomasyon">
+<h2>Otomatik Güncelleme Bilgisi</h2>
+<p>Bu site GitHub Pages üzerinde çalışır. Otomatik ilan kontrolü için GitHub Actions iş akışı ayrıca kurulmalıdır. Tek HTML dosyası kendi kendine arka planda çalışamaz.</p>
+<p>Botun bulduğu ilanlar doğrulanmadan yayımlanmamalıdır. Yeni kayıtlar kontrol edilip onaylandıktan sonra bu sayfaya eklenebilir.</p>
 </section>
 </main>
 
 <footer>
- <h3>AKPINAR KÖYÜ</h3>
- <p>Bir köyden fazlası, ortak bir hatıra.</p>
- <p>© <span id="year"></span> Akpınar Köyü</p>
+<h3>AKPINAR KÖYÜ</h3>
+<p>Bir köyden fazlası, ortak bir hatıra.</p>
+<p>© <span id="yil"></span> Akpınar Köyü</p>
 </footer>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
-
-async function loadMemorials(){
- const area=document.getElementById("memorialList");
- try{
-  const response=await fetch("./data/vefat.json?ts="+Date.now());
-  if(!response.ok) throw new Error("Kayıt dosyası bulunamadı");
-  const data=await response.json();
-  const people=Array.isArray(data.people)?data.people:[];
-  area.innerHTML="";
-  if(people.length===0){
-   area.innerHTML="<p>Henüz yayımlanmış kayıt bulunmuyor.</p>";
-  }
-  people.forEach(person=>{
-   const card=document.createElement("article");
-   card.className="person";
-   const avatar=document.createElement("div");
-   avatar.className="avatar";
-   avatar.textContent=(person.name||"?").trim().charAt(0).toLocaleUpperCase("tr-TR");
-   card.appendChild(avatar);
-   const name=document.createElement("h3");
-   name.textContent=person.name||"İsimsiz kayıt";
-   card.appendChild(name);
-   const date=document.createElement("p");
-   date.textContent=person.date||"Tarih belirtilmemiş";
-   card.appendChild(date);
-   if(person.note){
-    const note=document.createElement("p");
-    note.textContent=person.note;
-    card.appendChild(note);
-   }
-   if(person.source){
-    const link=document.createElement("a");
-    link.href=person.source;
-    link.target="_blank";
-    link.rel="noopener noreferrer";
-    link.textContent="Kaynak ilanı görüntüle";
-    card.appendChild(link);
-   }
-   area.appendChild(card);
-  });
-  document.getElementById("lastUpdate").textContent=
-   data.updated ? "Son veri güncellemesi: "+data.updated : "";
- }catch(error){
-  area.innerHTML="<p>Kayıtlar şu anda yüklenemedi. Biraz sonra tekrar deneyin.</p>";
- }
-}
-loadMemorials();
+document.getElementById("yil").textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
